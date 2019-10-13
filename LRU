@@ -1,3 +1,4 @@
+//Program for LRU-Page-Replacement
 #include<stdio.h>
 
 int findLRU(int time[], int n){
@@ -16,13 +17,13 @@ int findLRU(int time[], int n){
 int main()
 {
     int no_of_frames, no_of_pages, frames[10], pages[30], counter = 0, time[10], flag1, flag2, i, j, pos, faults = 0;
-	printf("Enter number of frames: ");
+	printf("Enter number of frames:\t");
 	scanf("%d", &no_of_frames);
 
-	printf("Enter number of pages: ");
+	printf("Enter number of pages:\t");
 	scanf("%d", &no_of_pages);
 
-	printf("Enter reference string: ");
+	printf("Enter reference string:\n");
 
     for(i = 0; i < no_of_pages; ++i){
     	scanf("%d", &pages[i]);
